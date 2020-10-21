@@ -1,0 +1,15 @@
+{
+  "name": "resgu-cc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:gousta/resgu-cc.git",
+  "author": "Stratos Giouldasis <giouldasis.stratos@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^7.11.0",
+    "mocha": "^8.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
