@@ -6,8 +6,10 @@
   "author": "Stratos Giouldasis <giouldasis.stratos@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "atomically": "^1.6.0",
     "eslint": "^7.11.0",
-    "mocha": "^8.2.0"
+    "mocha": "^8.2.0",
+    "vorpal": "^1.12.0"
   },
   "scripts": {
     "test": "mocha"
