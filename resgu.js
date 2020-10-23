@@ -5,14 +5,14 @@ const { readFileSync, writeFileSync } = require("atomically");
 
 const TalkAction = function ({ options }, callback) {
   if (options.text) {
-    this.log("RESGU:", `"${options.text}" => "${Core.guruTalk(options.text)}"`);
+    this.log("RESGU:", `"${options.text}" => "${Core.resguTalk(options.text)}"`);
   }
   if (options.file) {
     try {
       const filename = path.parse(options.file).base;
       this.log("RESGU: reading file", filename);
       const text = readFileSync(options.file, { encoding: "utf8" });
-      const resguText = Core.guruTalk(text);
+      const resguText = Core.resguTalk(text);
       const filenameOutput = `resgu-${filename}`;
       writeFileSync(filenameOutput, resguText, { encoding: "utf8" });
       this.log("RESGU: writing file =>", filenameOutput);
